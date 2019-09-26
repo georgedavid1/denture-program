@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      Patient Form
+      {{patientForm.value | json}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <form [formGroup]="patientForm">
+        <div class="form-group">
+          <label>First Name</label>
+          <input formControlName="firstName" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input formControlName="lastName" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Address</label>
+          <input formControlName="address" type="text" class="form-control">
+        </div>
+
+      </form>
+              <button class="btn btn-md btn-primary" type="submit" (click)="submit()"[disabled]="!patientForm.valid">Submit</button>
+    </div>
+  </div>
+</div>

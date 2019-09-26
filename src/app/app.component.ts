@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'denture-program';
+  dentureClinic = 'Cascade Denture Clinic';
+  tagline = 'Where Smiles are Made'
 }
